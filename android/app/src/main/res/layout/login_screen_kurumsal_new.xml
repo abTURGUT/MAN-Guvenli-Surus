@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bireysel_background"
+    tools:context=".LoginScreen.LoginScreenMain">
+
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="#B3000000"
+        android:fontFamily="sans-serif-light"
+        android:text="kurumsal kayıt talep formu"
+        android:textColor="#DAD4D4"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/lskn_nameET"
+        android:layout_width="277dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="50dp"
+        android:background="#F0E8E8"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-light"
+        android:hint="İsim"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <EditText
+        android:id="@+id/lskn_phoneET"
+        android:layout_width="277dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="50dp"
+        android:background="#F0E8E8"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-light"
+        android:hint="Telefon Numarası"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lskn_mailET" />
+
+    <EditText
+        android:id="@+id/lskn_mailET"
+        android:layout_width="277dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="50dp"
+        android:background="#F0E8E8"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-light"
+        android:hint="E-Posta"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lskn_surnameET" />
+
+    <Button
+        android:id="@+id/lskn_errorMessageTXT"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="#B3CF2929"
+        android:fontFamily="sans-serif-light"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="#DAD4D4"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lskn_foundationET" />
+
+    <EditText
+        android:id="@+id/lskn_surnameET"
+        android:layout_width="277dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="50dp"
+        android:background="#F0E8E8"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-light"
+        android:hint="Soyisim"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lskn_nameET" />
+
+    <Button
+        android:id="@+id/lskn_confirmBTN"
+        android:layout_width="289dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Talepte bulun"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lskn_errorMessageTXT"
+        app:layout_constraintVertical_bias="0.392" />
+
+    <EditText
+        android:id="@+id/lskn_foundationET"
+        android:layout_width="277dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="50dp"
+        android:background="#F0E8E8"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-light"
+        android:hint="Firma Adı"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lskn_phoneET" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

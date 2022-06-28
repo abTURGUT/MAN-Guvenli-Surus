@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bireysel_background"
+    tools:context=".LoginScreen.LoginScreenMain">
+
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="#B3000000"
+        android:fontFamily="sans-serif-light"
+        android:text="KURUMSAL GİRİŞ EKRANI"
+        android:textColor="#DAD4D4"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/lsk_maillET"
+        android:layout_width="277dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="50dp"
+        android:background="#F0E8E8"
+        android:ems="10"
+        android:fontFamily="sans-serif-light"
+        android:hint="E-Posta"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/lsk_loginBTN"
+        android:layout_width="277dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="GİRİŞ YAP"
+        android:textColor="#f0e8e8"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lsk_errorMessageTXT" />
+
+    <Button
+        android:id="@+id/lsk_newAccountBTN"
+        android:layout_width="224dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="KAYIT TALEBİNDE BULUN"
+        android:textColor="#f0e8e8"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lsk_loginBTN"
+        app:layout_constraintVertical_bias="0.238" />
+
+    <CheckBox
+        android:id="@+id/lsk_rememberMeCHECK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/lsk_errorMessageTXT"
+        app:layout_constraintEnd_toEndOf="@+id/lsk_passwordET"
+        app:layout_constraintTop_toBottomOf="@+id/lsk_passwordET" />
+
+    <Button
+        android:id="@+id/lsk_errorMessageTXT"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:background="#B3CF2929"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="#DAD4D4"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lsk_passwordET" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Beni Hatırla"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/lsk_rememberMeCHECK"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lsk_passwordET"
+        app:layout_constraintTop_toBottomOf="@+id/lsk_passwordET" />
+
+    <EditText
+        android:id="@+id/lsk_passwordET"
+        android:layout_width="277dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="50dp"
+        android:background="#F0E8E8"
+        android:ems="10"
+        android:fontFamily="sans-serif-light"
+        android:hint="Şifre"
+        android:inputType="textPersonName"
+        android:password="true"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lsk_maillET" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="300dp"
+        android:layout_height="281dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/lsk_maillET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:srcCompat="@drawable/logo_man" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

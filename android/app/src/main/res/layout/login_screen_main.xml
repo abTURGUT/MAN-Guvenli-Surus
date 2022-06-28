@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kurumsal_background"
+    tools:context=".LoginScreen.LoginScreenMain">
+
+
+    <Button
+        android:id="@+id/girisMsg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#B3000000"
+        android:fontFamily="sans-serif-light"
+        android:text="Güvenli Sürüş"
+        android:textColor="#DAD4D4"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.72" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#B3000000"
+        android:fontFamily="sans-serif-light"
+        android:text="LÜTFEN BİR GİRİŞ TİPİ SEÇİNİZ"
+        android:textColor="#DAD4D4"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/ls_bireyselBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.645" />
+
+    <Button
+        android:id="@+id/ls_bireyselBTN"
+        android:layout_width="230dp"
+        android:layout_height="70dp"
+
+        android:layout_marginBottom="84dp"
+        android:background="#E6E1DFDF"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="BİREYSEL GİRİŞ"
+        android:textColor="#f0e8e8"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ls_kurumsalBTN"
+        android:layout_width="230dp"
+        android:layout_height="70dp"
+
+        android:layout_marginBottom="28dp"
+        android:background="#E6E1DFDF"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="KURUMSAL GİRİŞ"
+        android:textColor="#f0e8e8"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/ls_bireyselBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.224"
+        app:srcCompat="@drawable/logo_man_guvenli_surus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
